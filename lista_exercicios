@@ -52,3 +52,7 @@ SELECT livros.titulo AS livro,
 autores.nome AS autor
 FROM livros
 INNER JOIN autores ON livros.autor_id = autores.id;
+
+SELECT autores.nome AS autor, livros.titulo
+FROM autores
+LEFT JOIN livros ON autores.id = livros.autor_id;
