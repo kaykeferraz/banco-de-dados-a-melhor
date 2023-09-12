@@ -72,3 +72,8 @@ GROUP BY autores.nome
 ORDER BY numero_de_livros DESC
 LIMIT 1;
 
+SELECT produto, SUM(receita) AS total_da_receita
+FROM vendas
+GROUP BY produto
+ORDER BY total_da_receita ASC
+LIMIT 1;
